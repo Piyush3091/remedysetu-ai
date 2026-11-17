@@ -2,7 +2,14 @@
 
 A web app that turns a customer's WhatsApp message into a ready-to-send sales reply. A salesperson pastes the message, and the app detects the intent and language, matches the product against the catalogue, retrieves verified prices and bulk discounts, and writes a reply in Hindi, English or Hinglish.
 
-**Core rule: the AI never invents products or prices.** The backend is the only source of product and price data.
+
+
+**Live demo:** https://remedysetu-ai-five.vercel.app/
+**API health check:** https://remedysetu-ai.onrender.com/api/health
+**GitHub:** https://github.com/Piyush3091/remedysetu-ai
+**Video walkthrough:** ADD_YOUR_VIDEO_LINK_HERE
+
+> The backend runs on Render's free tier and sleeps when idle, so the first request can take up to ~50 seconds.
 
 ## Features
 
@@ -14,6 +21,7 @@ A web app that turns a customer's WhatsApp message into a ready-to-send sales re
 - Query history (SQLite) and a dashboard with basic statistics
 - Product catalogue view with search
 - Fallback mode: if Gemini is unavailable, deterministic rule-based replies keep the app working
+
 
 ## Tech stack
 
